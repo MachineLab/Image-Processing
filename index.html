@@ -108,7 +108,7 @@
         <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
     <ul class="nav bs-sidenav">
     
-        <li class="first-level active"><a href="#_1"> 数字图像处理实验(选做) </a></li>
+        <li class="first-level active"><a href="#_1"> 光学字符识别(选做) </a></li>
         
             <li class="second-level"><a href="#_2">概要</a></li>
             
@@ -135,7 +135,7 @@
 </div></div>
         <div class="col-md-9" role="main">
 
-<h1 id="_1"><center> 数字图像处理实验(选做) </center></h1>
+<h1 id="_1"><center> 光学字符识别(选做) </center></h1>
 <h2 id="_2">概要</h2>
 <p>经过本次课程实验, 你将能利用所学的图像处理知识, 结合matlab实现一个完整的光学字符识别系统(OCR). </p>
 <p>整个课程的全部代码<a href="https://memoiry.me/files/OCR.zip">点此下载</a>, 点开OCR.m文件并运行即可.</p>
@@ -212,8 +212,8 @@ imagen = bwareaopen(imagen,30);
 <h3 id="6">6. 模式识别</h3>
 <h4 id="61">6.1 矩阵相似度</h4>
 <p>具体的矩阵相似度计算公式如下</p>
-<p>$$r = \frac{\sum_m\sum_n(A_{mn} - \bar{A})(B_{mn} - \bar{B}) }{\sqrt{(\sum_m\sum_n(A_{mn}-\bar{A})^2)(\sum_m\sum_n(B_{mn}-\bar{B})^2)}}$$</p>
-<p>其中$\bar{A},\bar{B}$ 分别为矩阵$A,B$全部元素的平均值. </p>
+<p align="center"><img src="https://ooo.0o0.ooo/2017/03/22/58d27dc942c6c.png" width="900"></p>
+
 <p>利用该公式可以计算两个矩阵的相关性, 这里我们计算的是待识别二值图像矩阵与模板矩阵的相似性, 以找到与其最相思的模板矩阵.</p>
 <h4 id="62">6.2 获取单个字符图像矩阵</h4>
 <p>由于一个待识别图像上并非只有一个字符, 我们需要将每一个字符单独提取出来进行识别, 具体步骤如下.</p>
@@ -413,11 +413,11 @@ end
         
     </div>
 
-    <footer class="col-md-12 text-center">
+    <!--<footer class="col-md-12 text-center">
         <hr>
         <p>
         <small>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a>.</p></small>
-    </footer>
+    </footer>-->
 
     <script src="./js/jquery-1.10.2.min.js"></script>
     <script src="./js/bootstrap-3.0.3.min.js"></script>
@@ -462,5 +462,5 @@ end
 
 <!--
 MkDocs version : 0.16.1
-Build Date UTC : 2017-03-22 13:28:24
+Build Date UTC : 2017-03-22 13:38:33
 -->
